@@ -1,0 +1,23 @@
+.header_width {
+    width: 100%;
+    background-color: black;
+}
+.header_flex {
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.content_styles {
+    margin: 12px 50px 15px 20px;
+    color: white;
+}
+.content_styles:first-child {
+    margin: 12px 50px 15px 50px;
+    color: white;
+}
+.menu_styles {
+    margin-left: auto;
+    color: white;
+}
