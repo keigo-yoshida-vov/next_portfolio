@@ -1,4 +1,4 @@
-import { FullScreenDialog } from '@/components/atoms/dialogs/FullScreenDialog/FullScreenDialog'
+import { FullScreenDialog } from '@/components/molecules/dialogs/FullScreenDialog/FullScreenDialog'
 import React, { memo, useEffect, useState } from 'react'
 import scss from './base-header.module.scss'
 
