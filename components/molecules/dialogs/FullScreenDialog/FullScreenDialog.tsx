@@ -18,7 +18,7 @@ const Transition = React.forwardRef(function Transition(
     },
     ref: React.Ref<unknown>,
 ) {
-    return <Slide direction="right" ref={ref} {...props} />
+    return <Slide direction="up" ref={ref} {...props} />
 })
 
 export const FullScreenDialog = () => {
@@ -35,7 +35,7 @@ export const FullScreenDialog = () => {
         alert('click')
     }
     return (
-        <div>
+        <div className={`${scss.menuRight}`}>
             <Button variant="text" onClick={handleClickOpen} className={`${scss.menu_size}`}>
                 <Menu />
             </Button>
@@ -65,25 +65,22 @@ export const FullScreenDialog = () => {
                     <ActionAreaCard image='cat.jpg' color='gray' size={300} onClick={onClickCard}>
                         <p>title</p>
                     </ActionAreaCard>
-                    <ActionAreaCard image='cat.jpg' color='lightgray' size={300} onClick={onClickCard}>
+                    <ActionAreaCard image='cat.jpg' color='lightgray' size={200} onClick={onClickCard}>
                         <p>title</p>
                     </ActionAreaCard>
-                    <ActionAreaCard image='cat.jpg' color='gray' size={300} onClick={onClickCard}>
-                        <p>title</p>
-                    </ActionAreaCard>
-                    <ActionAreaCard image='cat.jpg' color='lightgray' size={300} onClick={onClickCard}>
-                        <p>title</p>
-                    </ActionAreaCard>
-                    <ActionAreaCard image='cat.jpg' color='gray' size={300} onClick={onClickCard}>
+                    <ActionAreaCard image='cat.jpg' color='gray' size={400} onClick={onClickCard}>
                         <p>title</p>
                     </ActionAreaCard>
                     <ActionAreaCard image='cat.jpg' color='lightgray' size={300} onClick={onClickCard}>
                         <p>title</p>
                     </ActionAreaCard>
-                    <ActionAreaCard image='cat.jpg' color='gray' size={300} onClick={onClickCard}>
+                    <ActionAreaCard image='cat.jpg' color='gray' size={500} onClick={onClickCard}>
                         <p>title</p>
                     </ActionAreaCard>
                     <ActionAreaCard image='cat.jpg' color='lightgray' size={300} onClick={onClickCard}>
+                        <p>title</p>
+                    </ActionAreaCard>
+                    <ActionAreaCard image='cat.jpg' color='gray' size={400} onClick={onClickCard}>
                         <p>title</p>
                     </ActionAreaCard>
                 </div>
