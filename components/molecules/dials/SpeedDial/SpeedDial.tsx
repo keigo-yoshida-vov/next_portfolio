@@ -33,7 +33,9 @@ const actions = [
 export const CustomSpeedDial = () => {
     const [direction, setDirection] =
         React.useState<SpeedDialProps['direction']>('down')
-
+    const onClickAlert = (name: string) => {
+        alert(name)
+    }
     return (
         <Box sx={{ transform: 'translateZ(0px)', flexGrow: 1 }}>
             <Box sx={{ position: 'relative', mt: 0, height: 320 }}>
@@ -48,6 +50,7 @@ export const CustomSpeedDial = () => {
                             icon={action.icon}
                             tooltipOpen
                             tooltipTitle={action.name}
+                            onClick={() => onClickAlert(action.name)}
                         />
                     ))}
                 </StyledSpeedDial>
